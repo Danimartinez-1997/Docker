@@ -13,3 +13,11 @@ services:
       - "8081:80"
     volumes:
       - ./app:/usr/local/apache2/htdocs/
+
+services:
+  db:
+    image: mysql
+    restart: always
+    port: "8082:80"
+    environment:
+      MYSQL_ROOT_PASSWORD: abcd1234.
