@@ -20,3 +20,5 @@ services:
       - "8082:80"
     environment:
       MYSQL_ROOT_PASSWORD: abcd1234.
+    volumes:
+      - ./my-db:/var/lib/mysql
